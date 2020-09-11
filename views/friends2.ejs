@@ -1,0 +1,14 @@
+<%var anna = "Example of embeded javascript"%>
+
+<h1>Friends List</h1>
+
+<%friends.forEach(function(friend){ %>
+    <h2><li><%=friend%></li></h2>
+ <%}) %>
+
+ <h2><%=anna%></h2>
+
+<form action="/addfriend" method="POST">
+    <input type="text" name = "newfriend" placeholder="name">
+    <button>I made a new friend!</button>
+</form>
